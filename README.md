@@ -7,7 +7,18 @@ git clone + link
 ### Criar Conteiner docker
 terminal
 
-* docker run --name hubLocal -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+* docker run --name hubLocal -e POSTGRES_PASSWORD=admin -p 5432:5432 -d postgres
+
+### banco de dados
+<img src="/1.png" width="715" height="600"/>
+<img src="/2.png" width="715" height="600"/>
+
+1. Host= localhost
+2. Database: postgres
+3. UserName: postgres
+5. password= admin
+
+6. Database name= app_hublocal
 
 ### Criar Tabelas
 * yarn typeorm migration:run
